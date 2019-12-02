@@ -17,4 +17,14 @@ node_modules/
 package-lock.json
 report/
 target
-
+_windows/laf.xml
+bitbucket-linky.xml
+colors.scheme.xml
+debugger.xml
+editor.xml
+filetypes.xml
+ide.general.xml
+lombok-plugin.xml
+notifications.xml
+ui.lnf.xml
+vcs.xml
