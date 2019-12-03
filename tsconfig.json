@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ic-ui": [
+        "dist/ic-ui"
+      ],
+      "ic-ui/*": [
+        "dist/ic-ui/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
