@@ -12,9 +12,9 @@ import { IcUiModule } from '../../projects/ic-ui/src/lib/ic-ui.module';
   ],
   imports: [
     BrowserModule,
+    IcUiModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    IcUiModule
   ],
   providers: [],
   bootstrap: [AppComponent]
