@@ -1,0 +1,8 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~@angular/material/theming';
+@import './projects/ic-ui/src/lib/styles/common/variables.scss';
+@include mat-core();
+// TODO: theming
+
+
+@import './projects/ic-ui/src/lib/styles/overrides/mat-input';

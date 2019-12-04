@@ -99,3 +99,5 @@ modules/.vscode
 
 .notes.md
 baseline.json
+
+package-loc.json
