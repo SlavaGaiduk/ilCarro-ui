@@ -1,0 +1,9 @@
+.mat-button-toggle{
+  background: $button-background;
+  border: $color-grey 1px solid;
+}
+
+.mat-button-toggle-checked{
+  background: $color-grey $button-background;
+  border: $color-grey 1px solid;
+}

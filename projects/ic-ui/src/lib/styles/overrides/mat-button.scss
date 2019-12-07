@@ -1,12 +1,8 @@
 .mat-button {
-  width: $mat-button-width;
-  height: $mat-button-height;
-
-  background: $mat-button-background;
-  box-shadow: $mat-button-box-shadow;
-  opacity: $opacity;
-  text-align: $mat-button-text-align;
-  font: $mat-button-font;
-  letter-spacing: $mat-button-letter-spacing;
-  color: $mat-button-color;
+  background: $color-red $button-background;
+  box-shadow: $color-shadow 0 3px 6px;
+  text-align: center;
+  font: $font-bold-18-59;
+  letter-spacing: 0;
+  color: $color-white;
 }

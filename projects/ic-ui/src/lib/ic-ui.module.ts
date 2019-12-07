@@ -1,5 +1,12 @@
 import {NgModule} from '@angular/core';
-import {MatButtonModule, MatCheckboxModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatCheckboxModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatSelectModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [],
@@ -7,13 +14,17 @@ import {MatButtonModule, MatCheckboxModule, MatFormFieldModule, MatInputModule} 
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSelectModule,
+    MatButtonToggleModule,
   ],
   exports: [
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSelectModule,
+    MatButtonToggleModule,
   ]
 })
 export class IcUiModule {
