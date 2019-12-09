@@ -7,3 +7,40 @@
   background: $color-grey $button-background;
   border: $color-grey 1px solid;
 }
+
+
+$border-constant: 50px;
+
+mat-button-toggle.A {
+  &.border-right:after {
+    content: '';
+    margin-right: $border-constant;
+    position: absolute;
+    background: transparent;
+    display: inline-block;
+    border-top: $border-constant solid red;
+    border-right: $border-constant solid transparent;
+  }
+
+  &.border-left {
+    margin-left: $border-constant;
+    &:before {
+      content: '';
+      position: absolute;
+      margin-left: -$border-constant;
+      background: transparent;
+      display: inline-block;
+      border-bottom: $border-constant solid green;
+      border-left: $border-constant solid transparent;
+    }
+  }
+
+
+  &.mat-button-toggle-checked {
+    &:after, &:before {
+      border-bottom-color: $color-grey;
+      border-top-color: $color-grey;
+    }
+  }
+}
+
