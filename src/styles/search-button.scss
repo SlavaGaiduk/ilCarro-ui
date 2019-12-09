@@ -1,0 +1,94 @@
+.search-button-big {
+  color: #FFFFFF;
+  padding-left: 20px;
+  border-right: 100px solid transparent;
+  border-left: 0 solid transparent;
+  height: 0;
+  width: 200px;
+  line-height: 50px;
+  position: absolute;
+}
+
+.search-button-big label {
+  position:absolute;
+  padding-left: 50px;
+}
+
+.search-button-small-1 {
+  width: 100px;
+  height: 40px;
+  transform: skew(63.5deg);
+  color: #FFFFFF;
+  padding-left: 20px;
+  line-height: 50px;
+  position: relative;
+  top: 10px;
+  left: 282px;
+}
+
+.search-button-big fa-icon{
+  position:absolute;
+  padding-left: 120px;
+}
+
+.search-button-small-1 fa-icon{
+  transform: skew(-63.5deg);
+  content:'';
+  position:absolute;
+  padding-left: 30px;
+}
+
+.search-button-small-2 fa-icon{
+  transform: skew(-63.5deg);
+  content:'';
+  position:absolute;
+  padding-left: 30px;
+}
+
+.search-button-small-2 {
+  width: 100px;
+  height: 40px;
+  transform: skew(63.5deg);
+  color: #FFFFFF;
+  padding-left: 20px;
+  line-height: 50px;
+  position: relative;
+  top: -30px;
+  left: 404px;
+}
+
+.search-button-big[color="red"]{
+  border-bottom: 50px solid $red;
+}
+
+.search-button-big[color="navy"]{
+  border-bottom: 50px solid $navy;
+}
+
+.search-button-big[color="grey"]{
+  border-bottom: 50px solid #6C7E8B;
+}
+
+.search-button-small-1[color="red"]{
+  background: $red;
+}
+
+.search-button-small-1[color="navy"]{
+  background: $navy;
+}
+
+.search-button-small-1[color="grey"]{
+  background: #6C7E8B;
+}
+
+.search-button-small-2[color="red"]{
+  background: $red;
+}
+
+.search-button-small-2[color="navy"]{
+  background: $navy;
+}
+
+.search-button-small-2[color="grey"]{
+  background: #6C7E8B;
+}

@@ -1,1 +1,28 @@
+<div class="search-form" color="red">
+  <div class="search-button-big" color="red"><label>Search</label>
+  <fa-icon [icon]="faSearch"></fa-icon></div>
+  <div class="search-button-small-1" color="navy"><fa-icon [icon]="faSlidersH"></fa-icon></div>
+  <div class="search-button-small-2" color="grey"><fa-icon [icon]="faMapMarkerAlt"></fa-icon></div>
+</div>
+<form class="il-form">
+  <div class="il-field">
+  <input class="il-input" id="name" type="text" value="Name">
+  <label for="name">Name</label>
+</div>
+<div class="il-field">
+  <input class="il-input" id="surname">
+  <label for="surname">Last Name</label>
+</div>
+<label class="il-checkbox">I agree
+  <input type="checkbox"  checked="checked">
+  <span class="checkmark"></span>
+</label>
+  <div class="grey-button">Price (low to high)</div>
+  <div class="white-button-triangle"></div>
+  <div class="white-button-main">Price (high to low)</div>
+  <div class="il-slider"><label class="range">{{minValue}} - {{maxValue}}</label>
+  <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>
+</div>
+<button class="red-button">Y'alla</button>
+</form>
 <router-outlet></router-outlet>

@@ -1,0 +1,20 @@
+.il-input {
+  border: 1px solid #5F727E;
+  padding: 10px 10px 10px 50px;
+  display: block;
+  width: 200px;
+  height: 20px;
+  margin: 0 10px;
+  color: $navy;
+  background-color: transparent;
+}
+
+::placeholder {
+  font-size: 8px;
+  transform: translateY(13px) translateX(-5px);
+}
+
+:focus::placeholder {
+ opacity: 0; transition: opacity 0.3s ease;
+}
+
