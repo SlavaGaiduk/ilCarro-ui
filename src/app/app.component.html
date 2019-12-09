@@ -19,7 +19,7 @@
 </div>
 
 <div>
-  <mat-form-field  appearance="outline">
+  <mat-form-field appearance="outline">
     <mat-label>Location</mat-label>
     <mat-select placeholder="Location">
       <mat-option value="option">New-York</mat-option>
@@ -37,10 +37,10 @@
 </div>
 
 <div>
-<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-  <mat-button-toggle value="Low">Price (low to high)</mat-button-toggle>
-  <mat-button-toggle value="High">Price (high to low)</mat-button-toggle>
-</mat-button-toggle-group>
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="Low" class="mat-button-toggle-left">Price (low to high)</mat-button-toggle>
+    <mat-button-toggle value="High">Price (high to low)</mat-button-toggle>
+  </mat-button-toggle-group>
 </div>
 
 <div>
@@ -52,5 +52,6 @@
 </div>
 
 <div>
-  // TODO: range slider
+  <span>Price range($/per day): </span><span>{{sliderMinValue}} - {{sliderMaxValue}}</span>
+  <ng5-slider [(value)]="sliderMinValue" [(highValue)]="sliderMaxValue" [options]="options"></ng5-slider>
 </div>
