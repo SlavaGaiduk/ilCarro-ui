@@ -4,6 +4,7 @@
     //width: 500px;
     margin-left: 20px;
   }
+
   .il-slider .ng5-slider .ng5-slider-selection {
     background: $navy;
   }
@@ -11,11 +12,11 @@
   .il-slider .ng5-slider .ng5-slider-pointer {
     background: transparent;
     border-radius: 0;
-      width: 0;
-      height: 15px;
-      border-left: 13px solid transparent;
-      border-right: 13px solid transparent;
-      border-bottom: 20px solid $navy;
+    width: 0;
+    height: 15px;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 20px solid $navy;
   }
 
   .il-slider .ng5-slider .ng5-slider-pointer:after {
@@ -43,7 +44,7 @@
   }
 
   .il-slider .ng5-slider .ng5-slider-tick.ng5-slider-selected {
-    background:  $navy;
+    background: $navy;
   }
 
   .il-slider .range {

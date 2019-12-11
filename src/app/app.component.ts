@@ -13,14 +13,8 @@ export class AppComponent {
   faSlidersH = faSlidersH;
   faMapMarkerAlt = faMapMarkerAlt;
 
-// @Component({
-//   selector: 'app-styled-slider',
-//   templateUrl: './styled-slider.component.html',
-//   styleUrls: ['./styled-slider.component.scss']
-// })
-// export class StyledSliderComponent {
-  minValue: 10;
-  maxValue: 90;
+  minValue: number = 10;
+  maxValue: number = 90;
   options: Options = {
     floor: 0,
     ceil: 100,
