@@ -1,21 +1,22 @@
-// We need to use ::ng-deep to overcome view encapsulation
-::ng-deep {
   .il-slider .ng5-slider .ng5-slider-bar {
-    background: #062639;
+    background: $navy;
     height: 2px;
+    //width: 500px;
+    margin-left: 20px;
   }
+
   .il-slider .ng5-slider .ng5-slider-selection {
-    background: #062639;
+    background: $navy;
   }
 
   .il-slider .ng5-slider .ng5-slider-pointer {
     background: transparent;
     border-radius: 0;
-      width: 0;
-      height: 15px;
-      border-left: 13px solid transparent;
-      border-right: 13px solid transparent;
-      border-bottom: 20px solid #062639;
+    width: 0;
+    height: 15px;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 20px solid $navy;
   }
 
   .il-slider .ng5-slider .ng5-slider-pointer:after {
@@ -28,7 +29,7 @@
   }
 
   .il-slider .ng5-slider .ng5-slider-limit {
-    color: #062639;
+    color: $navy;
     font-size: 12px;
     display: none;
   }
@@ -38,11 +39,20 @@
     height: 0;
     margin-left: 4px;
     border-radius: 0;
-    background: #062639;
+    background: $navy;
     top: -1px;
   }
 
   .il-slider .ng5-slider .ng5-slider-tick.ng5-slider-selected {
-    background:  #062639;
+    background: $navy;
   }
-}
+
+  .il-slider .range {
+    margin-left: 100px;
+  }
+
+  .il-slider .price {
+    margin-left: 100px;
+    color: #6C7E8B;
+  }
+

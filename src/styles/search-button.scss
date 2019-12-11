@@ -1,3 +1,5 @@
+$grey: #6C7E8B;
+
 .search-button-big {
   color: #FFFFFF;
   padding-left: 20px;
@@ -11,7 +13,7 @@
 
 .search-button-big label {
   position:absolute;
-  padding-left: 50px;
+  padding: 5px 0px 0px 50px;
 }
 
 .search-button-small-1 {
@@ -28,21 +30,21 @@
 
 .search-button-big fa-icon{
   position:absolute;
-  padding-left: 120px;
+  padding: 7px 0px 0px 120px;
 }
 
 .search-button-small-1 fa-icon{
   transform: skew(-63.5deg);
   content:'';
   position:absolute;
-  padding-left: 30px;
+  padding-left: 25px;
 }
 
 .search-button-small-2 fa-icon{
   transform: skew(-63.5deg);
   content:'';
   position:absolute;
-  padding-left: 30px;
+  padding-left: 25px;
 }
 
 .search-button-small-2 {
@@ -66,7 +68,7 @@
 }
 
 .search-button-big[color="grey"]{
-  border-bottom: 50px solid #6C7E8B;
+  border-bottom: 50px solid $grey;
 }
 
 .search-button-small-1[color="red"]{
@@ -78,7 +80,7 @@
 }
 
 .search-button-small-1[color="grey"]{
-  background: #6C7E8B;
+  background: $grey;
 }
 
 .search-button-small-2[color="red"]{
@@ -90,5 +92,5 @@
 }
 
 .search-button-small-2[color="grey"]{
-  background: #6C7E8B;
+  background: $grey;
 }

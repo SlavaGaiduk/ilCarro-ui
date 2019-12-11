@@ -5,20 +5,14 @@ import {faSearch, faSlidersH, faMapMarkerAlt} from '@fortawesome/free-solid-svg-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss', '../styles/il-slider.scss']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'ilCarro';
   faSearch = faSearch;
-  faSlidersH =faSlidersH;
+  faSlidersH = faSlidersH;
   faMapMarkerAlt = faMapMarkerAlt;
 
-// @Component({
-//   selector: 'app-styled-slider',
-//   templateUrl: './styled-slider.component.html',
-//   styleUrls: ['./styled-slider.component.scss']
-// })
-// export class StyledSliderComponent {
   minValue: number = 10;
   maxValue: number = 90;
   options: Options = {
