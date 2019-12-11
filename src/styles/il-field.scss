@@ -1,0 +1,43 @@
+.il-field {
+  width: 100%;
+  position: relative;
+  margin: 10px 10px 10px 10px;
+  font-size: 8px;
+}
+
+//.il-field label {
+//  position: absolute;
+//  left:16px;
+//  top: 31px;
+//  line-height:15px;
+//  overflow: hidden;
+//  color: #06263998;
+//  white-space: nowrap;
+//  //z-index: 1;
+//  opacity: 1;
+//}
+//.il-field input:focus + label {
+//  opacity: 1;
+//  top: 31px;
+//  left: 16px;
+//}
+
+//.il-field input:focus {
+//  outline: none;
+//}
+.il-field label {
+  opacity: 1;
+  position: absolute;
+  left:16px;
+  top: 30px;
+  color: #06263998;
+}
+
+//.il-field value {
+//  opacity: 1;
+//  position: absolute;
+//  left:16px;
+//  top: 30px;
+//  color: $navy;
+//  font-size: 18px;
+//}
