@@ -20,7 +20,9 @@
   <div class="grey-button">Price (low to high)</div>
   <div class="white-button-triangle"></div>
   <div class="white-button-main">Price (high to low)</div>
-  <div class="il-slider"><label class="range">{{minValue}} - {{maxValue}}</label>
+  <div class="il-slider">
+    <label class="price">Price range ($ per day)</label>
+    <label class="range">{{minValue}} - {{maxValue}}</label>
   <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>
 </div>
 <button class="red-button">Y'alla</button>
