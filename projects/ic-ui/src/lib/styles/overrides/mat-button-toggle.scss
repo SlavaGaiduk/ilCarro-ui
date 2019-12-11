@@ -15,8 +15,8 @@
 
 $border-constant: 50px;
 
-mat-button-toggle.A {
-	&.border-right {
+.mat-button-toggle {
+	&.custom-button-toggle-right {
 		border-right-color: transparent !important;
 
 		&:before {
@@ -53,7 +53,7 @@ mat-button-toggle.A {
 		}
 	}
 
-	&.border-left {
+	&.custom-button-toggle-left {
 		margin-left: 60px;
 		border-left-color: transparent !important;
 

@@ -4,7 +4,7 @@
 	<mat-form-field appearance="outline">
 		<mat-label>Email</mat-label>
 		<label>
-			<input matInput type="text" placeholder="Email" />
+			<input matInput placeholder="Email" type="text" />
 		</label>
 	</mat-form-field>
 </div>
@@ -13,7 +13,7 @@
 	<mat-form-field appearance="outline">
 		<mat-label>Password</mat-label>
 		<label>
-			<input matInput type="password" placeholder="Password" />
+			<input matInput placeholder="Password" type="password" />
 		</label>
 	</mat-form-field>
 </div>
@@ -31,15 +31,15 @@
 	<mat-form-field appearance="outline">
 		<mat-label>From</mat-label>
 		<label>
-			<input matInput type="date" placeholder="From" />
+			<input matInput placeholder="From" type="date" />
 		</label>
 	</mat-form-field>
 </div>
 
 <div>
-	<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-		<mat-button-toggle value="Low" class="mat-button-toggle-left border-right A">Price (low to high) </mat-button-toggle>
-		<mat-button-toggle value="High" class="border-left A">Price (high to low)</mat-button-toggle>
+	<mat-button-toggle-group aria-label="Font Style" name="fontStyle">
+		<mat-button-toggle class="custom-button-toggle-right" value="Low">Price (low to high)</mat-button-toggle>
+		<mat-button-toggle class="custom-button-toggle-left" value="High">Price (high to low)</mat-button-toggle>
 	</mat-button-toggle-group>
 </div>
 
@@ -53,5 +53,18 @@
 
 <div>
 	<span>Price range($/per day): </span><span>{{ sliderMinValue }} - {{ sliderMaxValue }}</span>
-	<ng5-slider [(value)]="sliderMinValue" [(highValue)]="sliderMaxValue" [options]="options"></ng5-slider>
+	<ng5-slider [(highValue)]="sliderMaxValue" [(value)]="sliderMinValue" [options]="options"></ng5-slider>
 </div>
+
+<mat-tab-group dynamicHeight>
+	<mat-tab label="Short tab">
+		<div class="example-small-box mat-elevation-z4">
+			Small content
+		</div>
+	</mat-tab>
+	<mat-tab label="Long tab">
+		<div class="example-large-box mat-elevation-z4">
+			Large content
+		</div>
+	</mat-tab>
+</mat-tab-group>

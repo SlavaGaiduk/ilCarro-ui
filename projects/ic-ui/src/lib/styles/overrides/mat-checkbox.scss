@@ -1,14 +1,14 @@
 .mat-checkbox-frame {
-  border-color: $color-red;
+	border-color: $color-red;
 }
 
 .mat-checkbox-checked .mat-checkbox-background {
-  background-color: $color-red !important;
+	background-color: $color-red !important;
 }
 
 .mat-checkbox-label {
-  text-align: left;
-  font: $font-regular;
-  letter-spacing: 0;
-  color: $color-text-grey;
+	text-align: left;
+	font: $font-regular;
+	letter-spacing: 0;
+	color: $color-text-grey;
 }

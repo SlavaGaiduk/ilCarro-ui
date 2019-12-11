@@ -4,32 +4,32 @@ $handleInnerColor: $color-grey-important;
 $barNormalColor: $color-grey-important;
 
 .ng5-slider {
-  .ng5-slider-bubble {
-    font-size: 0 !important;;
-  }
+	.ng5-slider-bubble {
+		font-size: 0 !important;
+	}
 
-  .ng5-slider-pointer {
-    width: 0 !important;
-    height: 0 !important;
-    margin: 1.7% 0 0 0;
-    border-radius: 0 !important;
-    background: transparent !important;
-    border-left: 14px solid transparent;
-    border-right: 14px solid transparent;
-    border-bottom: 18px solid $color-grey-important;
+	.ng5-slider-pointer {
+		width: 0 !important;
+		height: 0 !important;
+		margin: 1.7% 0 0 0;
+		border-radius: 0 !important;
+		background: transparent !important;
+		border-left: 14px solid transparent;
+		border-right: 14px solid transparent;
+		border-bottom: 18px solid $color-grey-important;
 
-    &:after {
-      background-color: transparent !important;
-    }
+		&:after {
+			background-color: transparent !important;
+		}
 
-    &.ng5-slider-active {
-      &:after {
-        background-color: transparent !important;
-      }
-    }
-  }
+		&.ng5-slider-active {
+			&:after {
+				background-color: transparent !important;
+			}
+		}
+	}
 
-  .ng5-slider-bar {
-    background: $barNormalColor;
-  }
+	.ng5-slider-bar {
+		background: $barNormalColor;
+	}
 }
