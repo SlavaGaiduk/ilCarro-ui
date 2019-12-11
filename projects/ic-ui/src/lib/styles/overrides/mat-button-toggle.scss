@@ -11,8 +11,6 @@
 $border-constant: 50px;
 
 mat-button-toggle.A {
-	z-index: 0;
-
 	&.border-right:after {
 		content: '';
 		margin-right: $border-constant;
@@ -32,8 +30,6 @@ mat-button-toggle.A {
 			content: '';
 			position: absolute;
 			margin-left: -$border-constant;
-			background: transparent;
-			display: inline-block;
 			border-top: $border-constant solid green;
 			border-left: $border-constant solid transparent;
 		}
@@ -46,4 +42,42 @@ mat-button-toggle.A {
 			border-top-color: $color-grey;
 		}
 	}
+}
+
+///////////////////////////
+.block {
+	margin: 0 0 0 40px;
+	position: relative;
+}
+
+.block span.triangle {
+	margin-bottom: 20px;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: -38px;
+	border-top: 38px solid greenyellow;
+	border-left: 38px solid transparent;
+}
+
+.block span.triangle:before {
+	content: '';
+	width: 53px;
+	display: inline-block;
+	position: absolute;
+	top: -20px;
+	left: -45px;
+	border-top: 1px solid red;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.block span.triangle:after {
+	content: '';
+	width: 38px;
+	display: inline-block;
+	position: absolute;
+	top: -39px;
+	left: -38px;
+	border-top: 1px solid blue;
 }
