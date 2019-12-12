@@ -4,8 +4,9 @@
 
 @include mat-core();
 
-@import 'lib/styles/overrides/mat-form-field';
 @import 'lib/styles/overrides/mat-button';
-@import 'lib/styles/overrides/mat-checkbox';
 @import 'lib/styles/overrides/mat-button-toggle';
+@import 'lib/styles/overrides/mat-checkbox';
+@import 'lib/styles/overrides/mat-form-field';
+@import 'lib/styles/overrides/mat-tab';
 @import 'lib/styles/overrides/ng5-slider';
