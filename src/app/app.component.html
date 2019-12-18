@@ -59,8 +59,12 @@
 <mat-tab-group (selectedIndexChange)="changeTabOrder($event)" [selectedIndex]="selected.value">
 	<mat-tab *ngFor="let tab of tabs; let index = index">
 		<ng-template mat-tab-label>
-			<fa-icon [icon]="tab.icon"></fa-icon>
-			<span *ngIf="index === 0">{{ tab.label }}</span>
+			<div [ngClass]="tab.color">
+				<div [ngClass]="tab.transform">
+					<fa-icon [icon]="tab.icon"></fa-icon>
+					<span *ngIf="index === 0">{{ tab.label }}</span>
+				</div>
+			</div>
 		</ng-template>
 		<div *ngIf="tab.label === 'Search'">Contents for Search tab</div>
 		<div *ngIf="tab.label === 'Filters'">Contents for Filters tab</div>
