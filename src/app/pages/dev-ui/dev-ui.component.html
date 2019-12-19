@@ -1,0 +1,71 @@
+<div>
+	<mat-form-field appearance="outline">
+		<mat-label>Email</mat-label>
+		<label>
+			<input matInput placeholder="Email" type="text" />
+		</label>
+	</mat-form-field>
+</div>
+
+<div>
+	<mat-form-field appearance="outline">
+		<mat-label>Password</mat-label>
+		<label>
+			<input matInput placeholder="Password" type="password" />
+		</label>
+	</mat-form-field>
+</div>
+
+<div>
+	<mat-form-field appearance="outline">
+		<mat-label>Location</mat-label>
+		<mat-select placeholder="Location">
+			<mat-option value="option">New-York</mat-option>
+		</mat-select>
+	</mat-form-field>
+</div>
+
+<div>
+	<mat-form-field appearance="outline">
+		<mat-label>From</mat-label>
+		<label>
+			<input matInput placeholder="From" type="date" />
+		</label>
+	</mat-form-field>
+</div>
+
+<div>
+	<mat-button-toggle-group aria-label="Font Style" name="fontStyle">
+		<mat-button-toggle class="custom-button-toggle-right" value="Low">Price (low to high)</mat-button-toggle>
+		<mat-button-toggle class="custom-button-toggle-left" value="High">Price (high to low)</mat-button-toggle>
+	</mat-button-toggle-group>
+</div>
+
+<div>
+	<button mat-button>Y’alla!</button>
+</div>
+
+<div>
+	<mat-checkbox>I agree to the terms of use and privacy policy.</mat-checkbox>
+</div>
+
+<div>
+	<span>Price range($/per day): </span><span>{{ sliderMinValue }} - {{ sliderMaxValue }}</span>
+	<ng5-slider [(highValue)]="sliderMaxValue" [(value)]="sliderMinValue" [options]="options"></ng5-slider>
+</div>
+
+<mat-tab-group (selectedIndexChange)="changeTabOrder($event)" [selectedIndex]="selected.value">
+	<mat-tab *ngFor="let tab of tabs; let index = index">
+		<ng-template mat-tab-label>
+			<div [ngClass]="tab.color">
+				<div [ngClass]="tab.transform">
+					<fa-icon [icon]="tab.icon"></fa-icon>
+					<span *ngIf="index === 0">{{ tab.label }}</span>
+				</div>
+			</div>
+		</ng-template>
+		<div *ngIf="tab.label === 'Search'">Contents for Search tab</div>
+		<div *ngIf="tab.label === 'Filters'">Contents for Filters tab</div>
+		<div *ngIf="tab.label === 'Map'">Contents for Map tab</div>
+	</mat-tab>
+</mat-tab-group>
