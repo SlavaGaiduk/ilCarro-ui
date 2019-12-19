@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Options } from 'ng5-slider';
 
 @Component({
 	selector: 'app-root',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	title = 'ilCargo';
+	title = 'ilCarro';
+	// slider
+	sliderMinValue: number;
+	sliderMaxValue: number;
+	options: Options = {
+		floor: 0,
+		ceil: 600
+	};
+
+	constructor() {
+		this.sliderMinValue = 100;
+		this.sliderMaxValue = 300;
+	}
 }
