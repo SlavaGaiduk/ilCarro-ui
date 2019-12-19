@@ -10,3 +10,15 @@
 @import 'lib/styles/overrides/mat-form-field';
 @import 'lib/styles/overrides/mat-tab';
 @import 'lib/styles/overrides/ng5-slider';
+
+// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.
+$custom-typography: mat-typography-config(
+	$font-family: 'Raleway'
+);
+
+// Override typography for all Angular Material, including mat-base-typography and all components.
+@include angular-material-typography($custom-typography);
+
+// Override the typography in the core CSS.
+@include mat-core($custom-typography);
