@@ -1,15 +1,15 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import '~@angular/material/theming';
-@import './projects/ic-ui/src/lib/styles/common/variables.scss';
+@import '~lib/styles/common/variables';
 
 @include mat-core();
 
-@import 'lib/styles/overrides/mat-button';
-@import 'lib/styles/overrides/mat-button-toggle';
-@import 'lib/styles/overrides/mat-checkbox';
-@import 'lib/styles/overrides/mat-form-field';
-@import 'lib/styles/overrides/mat-tab';
-@import 'lib/styles/overrides/ng5-slider';
+@import '~lib/styles/overrides/mat-button';
+@import '~lib/styles/overrides/mat-button-toggle';
+@import '~lib/styles/overrides/mat-checkbox';
+@import '~lib/styles/overrides/mat-form-field';
+@import '~lib/styles/overrides/mat-tab';
+@import '~lib/styles/overrides/ng5-slider';
 
 // Define a custom typography config that overrides the font-family as well as the
 // `headlines` and `body-1` levels.
@@ -22,3 +22,7 @@ $custom-typography: mat-typography-config(
 
 // Override the typography in the core CSS.
 @include mat-core($custom-typography);
+
+body {
+	margin: 0 !important;
+}

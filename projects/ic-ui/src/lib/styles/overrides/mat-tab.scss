@@ -3,8 +3,8 @@
 }
 
 .mat-tab-labels {
-	border-left: #ea2340 solid 282px;
-	border-bottom: #ea2340 solid 7px;
+	border-left: $color-red solid 282px;
+	border-bottom: $color-red solid 7px;
 }
 
 .mat-tab-label {
@@ -23,7 +23,7 @@
 		content: '';
 		position: absolute;
 		left: 0;
-		border-bottom: $border-constant solid #ea2340;
+		border-bottom: $border-constant solid $color-red;
 		border-right: $border-constant solid transparent;
 	}
 }
@@ -33,7 +33,7 @@
 		content: '';
 		position: absolute;
 		left: 0;
-		border-bottom: $border-constant solid #ea2340;
+		border-bottom: $border-constant solid $color-red;
 		border-right: $border-constant solid transparent;
 	}
 }
@@ -75,7 +75,7 @@
 .cl1 {
 	width: 80px;
 	height: 150px;
-	background-color: #ea2340;
+	background-color: $color-red;
 	transform: rotate(-45deg);
 }
 

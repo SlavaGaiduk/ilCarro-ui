@@ -1,0 +1,66 @@
+@import 'projects/ic-ui/src/styles';
+
+#loginDivLeft {
+	background-image: url('src/assets/images/loginCarImg.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-left: -32%;
+	display: inline-block;
+	width: 100%;
+	min-height: 608px;
+	float: left;
+}
+
+#loginDivRight {
+	display: inline-block;
+	min-width: 25%;
+	width: 25%;
+	min-height: 608px;
+	float: left;
+	padding-left: 5% !important;
+	box-shadow: -5px 0 6px -5px $color-shadow;
+	color: $color-text-grey;
+}
+
+#loginHeader {
+	margin: 0;
+	font: $font-32-59;
+	font-weight: $font-weight-black;
+	letter-spacing: 0;
+	color: $color-red;
+}
+
+#loginText {
+	margin: -3% 0 8% 0;
+	font: $font-regular-16-24;
+	letter-spacing: 0;
+}
+
+#loginLink {
+	font: $font-regular-13-24;
+	margin-top: 40%;
+}
+
+#loginStyle {
+	margin: 0;
+}
+#rectangle {
+	content: '';
+	position: absolute;
+	width: 4%;
+	height: 2%;
+	background: $color-red;
+	margin: 7% 0 0 -4%;
+
+	&:before {
+		content: '';
+		position: absolute;
+		display: inline-block;
+		width: 10px;
+		top: -50%;
+		right: -8%;
+		border-top: 10px solid white;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+}
