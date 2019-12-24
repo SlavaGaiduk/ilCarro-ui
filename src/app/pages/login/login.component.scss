@@ -1,25 +1,27 @@
 @import 'projects/ic-ui/src/styles';
 
+#loginDiv {
+	display: grid;
+	grid-template-columns: 67% 33%;
+	grid-template-rows: 590px;
+	grid-template-areas: 'l r';
+}
+
 #loginDivLeft {
-	background-image: url('src/assets/images/loginCarImg.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	margin-left: -32%;
-	display: inline-block;
-	width: 100%;
-	min-height: 608px;
-	float: left;
+	grid-area: l;
+}
+
+#loginCarImg {
+	height: 100%;
+	width: 149%;
+	margin-left: -49%;
 }
 
 #loginDivRight {
-	display: inline-block;
-	min-width: 25%;
-	width: 25%;
-	min-height: 608px;
-	float: left;
-	padding-left: 5% !important;
-	box-shadow: -5px 0 6px -5px $color-shadow;
+	grid-area: r;
+	box-shadow: -3px 0 6px -3px $color-shadow;
 	color: $color-text-grey;
+	padding-left: 5% !important;
 }
 
 #loginHeader {
@@ -44,22 +46,20 @@
 #loginStyle {
 	margin: 0;
 }
+
 #rectangle {
-	content: '';
 	position: absolute;
 	width: 4%;
 	height: 2%;
 	background: $color-red;
-	margin: 7% 0 0 -4%;
+	margin: 2% 0 0 -1%;
 
 	&:before {
 		content: '';
 		position: absolute;
-		display: inline-block;
-		width: 10px;
-		top: -50%;
-		right: -8%;
-		border-top: 10px solid white;
+		width: 35px;
+		right: -35%;
+		border-top: 15px solid white;
 		-webkit-transform: rotate(45deg);
 		transform: rotate(45deg);
 	}

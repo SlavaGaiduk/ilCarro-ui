@@ -1,7 +1,7 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import '~@angular/material/theming';
 @import 'lib/styles/common/variables';
-
+@import '~normalize.css';
 @include mat-core();
 
 @import 'lib/styles/overrides/mat-button';
@@ -22,7 +22,3 @@ $custom-typography: mat-typography-config(
 
 // Override the typography in the core CSS.
 @include mat-core($custom-typography);
-
-body {
-	margin: 0 !important;
-}

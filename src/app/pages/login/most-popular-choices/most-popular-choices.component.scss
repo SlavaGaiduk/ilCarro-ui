@@ -1,0 +1,26 @@
+@import 'projects/ic-ui/src/styles';
+
+#MPCBlue {
+	background-color: $color-blue;
+	color: white;
+	height: 266px;
+	display: table;
+}
+
+#MPCBlueLeft {
+	display: table-cell;
+	vertical-align: middle;
+	width: 33%;
+}
+
+#MPCBlueCenter {
+	display: table-cell;
+	vertical-align: middle;
+	width: 34%;
+}
+
+#MPCBlueRight {
+	display: table-cell;
+	vertical-align: middle;
+	width: 33%;
+}
