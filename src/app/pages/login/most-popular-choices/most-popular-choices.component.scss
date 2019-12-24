@@ -1,26 +1,107 @@
 @import 'projects/ic-ui/src/styles';
 
-#MPCBlue {
+#MPCDiv {
+	display: grid;
+	grid-template-columns: 16.6666666667% 16.6666666667% 16.6666666667% 16.6666666667% 16.6666666667% 16.6666666667%;
+	grid-template-rows: 266px 399px 553px;
+	grid-template-areas:
+		'bl bl bc bc br br'
+		'wl wl wl wr wr wr'
+		'cl cl cc cc cr cr';
+}
+
+.MPCDivRedLine {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: $color-red;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		right: 0;
+		top: 5%;
+		border-top: 24px solid $color-red;
+	}
+}
+
+#MPCDivBlueLeft {
+	grid-area: bl;
 	background-color: $color-blue;
 	color: white;
-	height: 266px;
-	display: table;
+	font: 50px/50px Bebas Neue;
+	letter-spacing: 0;
+	display: flex;
+	align-items: center;
 }
 
-#MPCBlueLeft {
-	display: table-cell;
-	vertical-align: middle;
-	width: 33%;
+.MPCDivBlueLeftText {
+	padding-left: 30%;
 }
 
-#MPCBlueCenter {
-	display: table-cell;
-	vertical-align: middle;
-	width: 34%;
+#MPCDivBlueCenter {
+	grid-area: bc;
+	background-color: $color-blue;
+	color: white;
+	font: 300 13px/24px Raleway;
+	display: flex;
+	align-items: center;
 }
 
-#MPCBlueRight {
-	display: table-cell;
-	vertical-align: middle;
-	width: 33%;
+#MPCDivBlueRight {
+	grid-area: br;
+	background-color: $color-blue;
+	color: $color-red;
+	font: 32px/32px Raleway;
+	font-weight: $font-weight-black;
+	display: flex;
+	align-items: center;
+}
+
+.MPCDivBlueRightText {
+	padding-left: 7%;
+}
+
+#MPCDivWhiteLeft {
+	grid-area: wl;
+	display: flex;
+	align-items: center;
+	padding-left: 23%;
+}
+
+.MPCDivWhiteLeftNumber {
+	font: 149px/149px Bebas Neue;
+	color: $color-red;
+}
+
+.MPCDivWhiteLeftText {
+	font: 54px/54px Bebas Neue;
+	color: $color-blue;
+}
+
+#MPCDivWhiteRight {
+	grid-area: wr;
+	display: flex;
+	align-items: center;
+	padding-left: 23%;
+	font: 400 16px/24px Raleway;
+	color: $color-blue;
+}
+
+#MPCDivCarsLeft {
+	grid-area: cl;
+	background-color: #5f727e;
+	z-index: 1;
+}
+
+#MPCDivCarsCenter {
+	grid-area: cc;
+	background-color: aqua;
+	z-index: 2;
+}
+
+#MPCDivCarsRight {
+	grid-area: cr;
+	background-color: blueviolet;
+	z-index: 3;
 }
