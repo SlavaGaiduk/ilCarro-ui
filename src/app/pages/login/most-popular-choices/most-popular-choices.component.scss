@@ -7,7 +7,7 @@
 	grid-template-areas:
 		'bl bl bc bc br br'
 		'wl wl wl wr wr wr'
-		'cl cl cc cc cr cr';
+		'c  c  c  c  c  c';
 }
 
 .MPCDivRedLine {
@@ -37,6 +37,7 @@
 
 .MPCDivBlueLeftText {
 	padding-left: 30%;
+	text-transform: capitalize;
 }
 
 #MPCDivBlueCenter {
@@ -88,20 +89,120 @@
 	color: $color-blue;
 }
 
-#MPCDivCarsLeft {
-	grid-area: cl;
-	background-color: #5f727e;
-	z-index: 1;
+#MPCDivCars {
+	grid-area: c;
+	background-color: $color-blue;
+	overflow: hidden;
+}
+#MPCDivCarsRed {
+	background-color: $color-red;
+	height: 92%;
+	transform: skew(45deg);
+	width: 120%;
+	margin-left: -10%;
+	overflow: hidden;
 }
 
-#MPCDivCarsCenter {
-	grid-area: cc;
-	background-color: aqua;
-	z-index: 2;
+.MPCDivCar {
+	height: 90%;
+	width: 30%;
+	display: inline-block;
+	overflow: hidden;
 }
 
-#MPCDivCarsRight {
-	grid-area: cr;
-	background-color: blueviolet;
-	z-index: 3;
+.MPCDivCar0 {
+	margin: 1% 0 0 4%;
+}
+
+.MPCDivCarImg {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 90%;
+	display: inline-block;
+	transform: skew(-45deg);
+}
+
+.MPCDivCarImg0 {
+	width: 145%;
+	margin-left: -7%;
+}
+
+.MPCDivCarImg1 {
+	width: 176%;
+	margin-left: -38%;
+}
+
+.MPCDivCarImg2 {
+	width: 138%;
+	margin-left: -38%;
+}
+
+.MPCCarImgTitle {
+	color: white;
+	font: 32px/38px Bebas Neue;
+	letter-spacing: 0;
+	text-transform: capitalize;
+	position: absolute;
+}
+
+.MPCCarImgTitle0 {
+	margin-top: -4%;
+	margin-left: 7%;
+}
+
+.MPCCarImgTitle1 {
+	margin-top: -4%;
+	margin-left: 43%;
+}
+
+.MPCCarImgTitle2 {
+	margin-top: -4%;
+	margin-left: 79%;
+}
+
+.MPCCarPrice {
+	width: 12%;
+	height: 12%;
+	background-color: white;
+	position: absolute;
+	margin-top: -2%;
+	margin-left: 6%;
+	color: $color-red;
+	box-shadow: 0 3px 6px #00000052;
+}
+
+.MPCCarPrice0 {
+	margin-left: 6%;
+}
+
+.MPCCarPrice1 {
+	margin-left: 42%;
+}
+
+.MPCCarPrice2 {
+	margin-left: 78%;
+}
+
+.MPCCarPriceSymbol {
+	font: Bold 31px/102px Raleway;
+	letter-spacing: 0;
+	position: absolute;
+	margin: -12% 0 0 6%;
+}
+
+.MPCCarPriceSum {
+	font: Bold 88px/106px Bebas Neue;
+	letter-spacing: 0;
+	position: absolute;
+	margin: -1% 0 0 18%;
+}
+
+.MPCCarPeriod {
+	position: absolute;
+	margin: 18% 0 0 72%;
+	text-transform: capitalize;
+	font: Bold 24px/29px Bebas Neue;
+	color: $color-text-grey;
+	transform: rotate(-90deg);
 }

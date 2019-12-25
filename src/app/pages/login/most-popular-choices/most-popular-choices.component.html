@@ -1,6 +1,6 @@
 <div id="MPCDiv">
 	<div id="MPCDivBlueLeft" class="MPCDivRedLine">
-		<span class="MPCDivBlueLeftText">NEVER MISTAKEN<br />FOR ANYTHING ELSE</span>
+		<span class="MPCDivBlueLeftText">never mistaken<br />for anything else</span>
 	</div>
 	<div id="MPCDivBlueCenter" class="MPCDivRedLine">
 		<span>
@@ -26,7 +26,17 @@
 			halvah tiramisu bear claw tart.
 		</span>
 	</div>
-	<div id="MPCDivCarsLeft"></div>
-	<div id="MPCDivCarsCenter"></div>
-	<div id="MPCDivCarsRight"></div>
+	<div id="MPCDivCars">
+		<div id="MPCDivCarsRed">
+			<div *ngFor="let car of cars; let i = index" [className]="'MPCDivCar MPCDivCar' + i">
+				<div [className]="'MPCDivCarImg MPCDivCarImg' + i" [ngStyle]="{ 'background-image': getParallaxImage(car.imgUrl) }"></div>
+			</div>
+		</div>
+		<span *ngFor="let car of cars; let i = index" [className]="'MPCCarImgTitle MPCCarImgTitle' + i">{{ car.name }}</span>
+		<div *ngFor="let car of cars; let i = index" [className]="'MPCCarPrice MPCCarPrice' + i">
+			<span class="MPCCarPriceSymbol">{{ car.symbol }}</span>
+			<span class="MPCCarPriceSum">{{ car.sum }}</span>
+			<span class="MPCCarPeriod">{{ car.period }}</span>
+		</div>
+	</div>
 </div>
