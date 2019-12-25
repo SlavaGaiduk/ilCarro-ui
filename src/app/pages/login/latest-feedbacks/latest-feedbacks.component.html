@@ -1,0 +1,13 @@
+<div id="LFDiv">
+	<div id="LFDivHeader">
+		<span>Latest feedbacks<br />from our customers</span>
+	</div>
+	<div *ngFor="let comment of comments; let i = index" class="LFDivComment" [ngStyle]="{ 'grid-area': 'c' + i }">
+		<img src="{{ comment.src }}" alt="" class="LFDivCommentImg" />
+		<div class="LFDivCommentComment">
+			<span>{{ comment.comment }}</span>
+		</div>
+		<div class="LFDivCommentPersonalData">{{ comment.personalData }}</div>
+		<div class="LFDivCommentDate">{{ comment.date }}</div>
+	</div>
+</div>

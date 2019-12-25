@@ -1,0 +1,57 @@
+@import 'projects/ic-ui/src/styles';
+
+#LFDiv {
+	display: grid;
+	grid-template-columns: 14% 29% 14% 29% 14%;
+	grid-template-rows: 327px repeat(3, 126px);
+	grid-template-areas:
+		'. h . . .'
+		'. c0 . c1 .'
+		'. c2 . c3 .'
+		'. c4 . c5 .';
+}
+
+#LFDivHeader {
+	grid-area: h;
+	text-align: left;
+	font: Bold 54px/54px Bebas Neue;
+	letter-spacing: 0;
+	color: $color-blue;
+	text-transform: capitalize;
+	display: flex;
+	align-items: center;
+}
+
+.LFDivComment {
+	grid-area: c0;
+	display: flex;
+}
+
+.LFDivCommentImg {
+	height: 70%;
+	width: 20%;
+	border-radius: 50%;
+	margin-right: 4%;
+}
+
+.LFDivCommentComment {
+	height: 32%;
+	width: 76%;
+	overflow: hidden;
+	display: inline-block;
+	font: $font-regular-16-24;
+	letter-spacing: 0;
+	color: $color-blue;
+}
+.LFDivCommentPersonalData {
+	margin: 16% 0 0 -76%;
+	font: Bold $font-regular-16-24;
+	letter-spacing: 0;
+	color: $color-red;
+}
+.LFDivCommentDate {
+	margin: 16% 0 0 8%;
+	font: $font-regular-13-24;
+	letter-spacing: 0;
+	color: $color-text-grey;
+}
