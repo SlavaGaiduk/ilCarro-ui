@@ -2,6 +2,8 @@
 @import '~@angular/material/theming';
 @import './projects/ic-ui/src/lib/styles/common/variables.scss';
 @include mat-core();
-// TODO: theming
 
 @import './projects/ic-ui/src/lib/styles/overrides/mat-input';
+@import './projects/ic-ui/src/lib/styles/overrides/mat-button';
+@import './projects/ic-ui/src/lib/styles/overrides/mat-tabs';
+@import 'projects/ic-ui/src/lib/styles/overrides/mat-checkbox';
