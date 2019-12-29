@@ -1,0 +1,48 @@
+.inCarro-choices-general {
+	display: flex;
+	flex-direction: column;
+}
+
+.ilCarro-choices-text {
+	display: flex;
+	flex-direction: row;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+
+.ilCarro-choices-number {
+	text-align: left;
+	font: Bold 149px/149px Bebas Neue;
+	letter-spacing: 0;
+	color: #ea2340;
+	text-transform: capitalize;
+	opacity: 1;
+}
+
+.ilCarro-choices-title {
+	text-align: left;
+	font: Bold 54px/54px Bebas Neue;
+	letter-spacing: 0;
+	color: #062639;
+	text-transform: uppercase;
+	opacity: 1;
+}
+
+.ilCarro-choices-blablabla {
+	text-align: left;
+	font: Regular 16px/24px Raleway;
+	letter-spacing: 0;
+	color: #062639;
+	opacity: 1;
+}
+
+.ilCarro-choices-cars {
+	display: flex;
+	flex-direction: row;
+}
+
+.car1.car2.car3 {
+	display: inline-block;
+}
+
+/*# sourceMappingURL=choices.component.css.map */
